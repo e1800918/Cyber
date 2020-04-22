@@ -21,6 +21,9 @@ Graffiti will also accept a language that is not currently on the list and store
  - Base64
  - Hex
  - AES256
+ - ...
+
+
 
 ### Features
 
@@ -34,3 +37,8 @@ Graffiti will also accept a language that is not currently on the list and store
 First, we need to clone into the Github for [Graffiti](https://github.com/Ekultek/Graffiti) by using ***git*** command
 
 ![e1800918](pic/1.PNG)
+
+Then get into that directory and list everything to compare what is missing or not
+
+![e1800918](pic/2.PNG)
+
