@@ -1,2 +1,2 @@
 # Study of one of the hacking SUBJECT 
-![android](pic/graffiti.png)
+![GitHub Logo](pic/graffiti.png)
