@@ -30,3 +30,7 @@ Graffiti will also accept a language that is not currently on the list and store
  - Ability to run external commands
  - Ability to securely wipe the history files
  - Ability to create your own payload files
+# What is the mechanism how to do it?
+First, we need to clone into the Github for [Graffiti](https://github.com/Ekultek/Graffiti) by using ***git*** command
+
+![bubu](pic/1.png)
