@@ -33,4 +33,4 @@ Graffiti will also accept a language that is not currently on the list and store
 # What is the mechanism how to do it?
 First, we need to clone into the Github for [Graffiti](https://github.com/Ekultek/Graffiti) by using ***git*** command
 
-![bubu](pic/1.png)
+![e1800918](pic/1.PNG)
