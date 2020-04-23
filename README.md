@@ -53,4 +53,9 @@ The easy way to run Graffiti is in normal command-line mode. All we have to do i
 
 ![e1800918](pic/4.PNG)
 
+We can see that there are options segregated between Windows and Linux for [Netcat shells](https://null-byte.wonderhowto.com/how-to/hack-like-pro-use-netcat-swiss-army-knife-hacking-tools-0148657/), [Python shells](https://wiki.python.org/moin/PythonShells) and several others.
+
+Graffiti comes complete with a database that will insert each encoded payload into it, in order to allow end users to view already created payloads for future use. To see the available encoders for the payloads, type `-Vc`
+
+![e1800918](pic/5.PNG)
 
