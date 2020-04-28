@@ -133,8 +133,23 @@ The `list` command will show all the available payloads but not clearly allocate
 
 ![e1800918](pic/11.PNG)
 
+We can create a payload with the `use` command, followed by the desired payload and the type of encoding to use:
 
+![e1800918](pic/12.PNG)
 
+As same as Graffiti's command-line mode, we can view a history of cached payloads by using the `cached` command. We can also display the command history with the `history` option:
+
+Finally, to exit interactive mode, just type `exit`:
+
+![e1800918](pic/13.PNG)
+
+# How to protect from it or uncover it?
+
+Just never upload payloads to online checkers.
+
+# Summary
+
+We learned in this tutorial how to use a tool called Graffiti in order to create obfuscated payloads for use in penetration testing and hacking. Second, we set up the platform and have it mounted easily on our system. Next, we explored the command-line mode and some of its options, including listing payloads, viewing history, and generating encoded payloads using a variety of techniques. Then we looked at the interactive mode and how it's easy to use to create payloads, all from an interactive prompt.
 
 
 
