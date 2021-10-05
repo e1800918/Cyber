@@ -3,7 +3,7 @@
   <img src="https://user-images.githubusercontent.com/14183473/49157062-8a351500-f2e4-11e8-80cd-00acd809171e.png">
 </p>
 
-# What GRAFFITI is?
+# What is GRAFFITI?
 Graffiti is a tool that uses a number of different encoding techniques to create obfuscated payloads.
 
 ### It offers an array of one-liners and shells in languages such as:
